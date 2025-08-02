@@ -1,0 +1,520 @@
+/* Custom styles for the Inter font and any specific overrides */
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* Custom scrollbar for a nicer look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(to right, #d97706, #f59e0b);
+    color: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 1rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.logo {
+    font-size: 2.50rem;
+    font-weight: 900;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    background-color: white;
+    color: #ea580c;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    transition: color 0.3s;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.nav-links a:hover {
+    color: #fef08a;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('https://as1.ftcdn.net/v2/jpg/02/28/08/24/1000_F_228082469_gQjr0wfyoBTcieBZDVm6L6nwgd7kbS77.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 0.5rem;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    max-width: 56rem;
+    margin: 0 1rem;
+}
+
+.hero-content h2 {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #c2410c;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: #1f2937;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.cta-button {
+    background-color: #ea580c;
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #c2410c;
+    transform: scale(1.05);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* About Us Section */
+.about-section {
+    padding: 4rem 0;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    margin: 2rem auto;
+    max-width: 80rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.about-section h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #c2410c;
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-image {
+    width: 100%;
+}
+
+.about-image img {
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    height: auto;
+}
+
+.about-text {
+    width: 100%;
+    text-align: left;
+}
+
+.about-text p {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: #374151;
+    margin-bottom: 1rem;
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 4rem 0;
+    background: linear-gradient(to bottom right, #fef9c3, #ffedd5);
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    margin: 2rem auto;
+    max-width: 80rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.menu-section h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #c2410c;
+    margin-bottom: 3rem;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.menu-item {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+}
+
+.menu-item:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    transition: opacity 0.3s;
+}
+
+.menu-item:hover img {
+    opacity: 0.9;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item p {
+    color: #4b5563;
+    margin-bottom: 0.75rem;
+}
+
+.menu-item span {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #ea580c;
+}
+
+/* Table Reservation Section */
+.reservation-section {
+    padding: 4rem 0;
+    background: linear-gradient(to bottom right, #fee2e2, #fecaca);
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    margin: 2rem auto;
+    max-width: 80rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.reservation-section h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #c2410c;
+    margin-bottom: 2rem;
+}
+
+.reservation-text {
+    font-size: 1.125rem;
+    color: #374151;
+    margin-bottom: 2rem;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reservation-form label {
+    display: block;
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.reservation-form input,
+.reservation-form textarea,
+.reservation-form select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.reservation-form input:focus,
+.reservation-form textarea:focus,
+.reservation-form select:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px #f97316;
+}
+
+.reservation-form textarea {
+    resize: vertical;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.submit-button {
+    background-color: #ea580c;
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #c2410c;
+    transform: scale(1.05);
+}
+
+/* Contact Us Section */
+.contact-section {
+    padding: 4rem 0;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    margin: 2rem auto;
+    max-width: 80rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.contact-section h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #c2410c;
+    margin-bottom: 2rem;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.contact-info {
+    width: 100%;
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-size: 1.125rem;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.opening-hours {
+    font-size: 1.125rem;
+    color: #374151;
+}
+
+.opening-hours li {
+    margin-bottom: 0.5rem;
+}
+
+.opening-hours span {
+    font-weight: 600;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-form h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px #f97316;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #111827;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.footer p {
+    font-size: 1.125rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #f97316;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+    }
+    
+    .about-image {
+        width: 50%;
+    }
+    
+    .about-text {
+        width: 50%;
+    }
+    
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .form-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-content {
+        flex-direction: row;
+    }
+    
+    .contact-info {
+        width: 50%;
+    }
+    
+    .contact-form {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

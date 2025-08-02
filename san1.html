@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samosa Cafe</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="san2.css">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container mx-auto flex justify-between items-center flex-wrap">
+            <h1 class="logo">Samosa Cafe</h1>
+            <nav class="mt-4 md:mt-0">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reserve">Reservations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>Taste the Tradition!</h2>
+            <p>
+                Authentic, Crispy, and Flavorful Samosas made with love.
+            </p>
+            <a href="#menu" class="cta-button">
+                Explore Our Menu
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container mx-auto text-center">
+            <h2>Our Story</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://b.zmtcdn.com/data/pictures/4/19676064/eaa7e5c9b2e1964315279fc48f396339_featured_v2.jpg" alt="Samosa Cafe Interior"
+                        onerror="this.onerror=null; this.src='https://placehold.co/600x400/FFD700/808080?text=Image+Unavailable';">
+                </div>
+                <div class="about-text">
+                    <p>
+                        Welcome to Samosa Cafe, where passion for authentic flavors meets a cozy ambiance. Our journey began with a simple idea: to share the joy of perfectly crafted samosas with everyone. Each samosa is handmade using traditional recipes passed down through generations, ensuring a taste that's both nostalgic and uniquely ours.
+                    </p>
+                    <p>
+                        We source the freshest ingredients and spices to bring you a truly exceptional culinary experience. Whether you're a long-time fan of samosas or trying them for the first first time, we promise a delightful bite every time. Come and savor the tradition with us!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container mx-auto text-center">
+            <h2>Our Delicious Menu</h2>
+
+            <div class="menu-grid">
+                <!-- Menu Item 1: Classic Potato Samosa -->
+                <div class="menu-item">
+                    <img src="https://img.freepik.com/premium-photo/classic-potato-samosas-with-chutney_198067-491657.jpg?w=2000" alt="Classic Potato Samosa"
+                        onerror="this.onerror=null; this.src='https://placehold.co/400x300/F08080/FFFFFF?text=Image+Unavailable';">
+                    <h3>Classic Potato Samosa</h3>
+                    <p>Crispy pastry filled with spiced potatoes and peas.</p>
+                    <span>₹40</span>
+                </div>
+
+                <!-- Menu Item 2: Chicken Samosa -->
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.CTRafGqhPpLA-4ZPK4mkVQHaE7?w=228&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Chicken Samosa"
+                        onerror="this.onerror=null; this.src='https://placehold.co/400x300/87CEFA/FFFFFF?text=Image+Unavailable';">
+                    <h3>Spicy Chicken Samosa</h3>
+                    <p>Minced chicken with aromatic spices, a fiery delight!</p>
+                    <span>₹60</span>
+                </div>
+
+                <!-- Menu Item 3: Paneer Samosa -->
+                <div class="menu-item">
+                    <img src="https://static.wixstatic.com/media/5a6519_fce5d7a17d3f421ab1e26811a53d663c~mv2.jpg/v1/fill/w_490,h_530,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/5a6519_fce5d7a17d3f421ab1e26811a53d663c~mv2.jpg" alt="Paneer Samosa"
+                        onerror="this.onerror=null; this.src='https://placehold.co/400x300/98FB98/FFFFFF?text=Image+Unavailable';">
+                    <h3>Makhani Paneer Samosa</h3>
+                    <p>Rich paneer filling with creamy tomato gravy flavor.</p>
+                    <span>₹65</span>
+                </div>
+
+                <!-- Menu Item 4: Sweet Samosa -->
+                <div class="menu-item">
+                    <img src="data:image/webp;base64,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" alt="Sweet Samosa"
+                        onerror="this.onerror=null; this.src='https://placehold.co/400x300/DDA0DD/FFFFFF?text=Image+Unavailable';">
+                    <h3>Sweet Coconut Samosa</h3>
+                    <p>A delightful dessert samosa with coconut and nuts.</p>
+                    <span>₹50</span>
+                </div>
+
+                <!-- Menu Item 5: Chutneys -->
+                <div class="menu-item">
+                    <img src="https://thumbs.dreamstime.com/z/assorted-indian-chutneys-small-rustic-bowls-grey-concrete-background-top-view-colorful-chutney-traditional-sauces-181065971.jpg" alt="Assorted Chutneys"
+                        onerror="this.onerror=null; this.src='https://placehold.co/400x300/BA55D3/FFFFFF?text=Image+Unavailable';">
+                    <h3>Assorted Chutneys</h3>
+                    <p>Mint, Tamarind, and Garlic Chutneys to complement your samosas.</p>
+                    <span>₹20</span>
+                </div>
+
+                <!-- Menu Item 6: Beverages -->
+                <div class="menu-item">
+                    <img src="https://static.vecteezy.com/system/resources/previews/026/500/574/non_2x/summer-refreshing-beverages-photo.jpg" alt="Refreshing Beverages"
+                        onerror="this.onerror=null; this.src='https://placehold.co/400x300/6A5ACD/FFFFFF?text=Image+Unavailable';">
+                    <h3>Refreshing Beverages</h3>
+                    <p>Cool off with our range of soft drinks and traditional Indian beverages.</p>
+                    <span>₹30-₹80</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table Reservation Section -->
+    <section id="reserve" class="reservation-section">
+        <div class="container mx-auto text-center">
+            <h2>Reserve Your Table</h2>
+            <p class="reservation-text">
+                Planning a visit? Book your table in advance for a seamless and delightful dining experience at Samosa Cafe.
+            </p>
+            <form class="reservation-form">
+                <div>
+                    <label for="res_name">Your Name</label>
+                    <input type="text" id="res_name" placeholder="Full Name" required>
+                </div>
+                <div>
+                    <label for="res_email">Your Email</label>
+                    <input type="email" id="res_email" placeholder="email@example.com" required>
+                </div>
+                <div>
+                    <label for="res_phone">Phone Number</label>
+                    <input type="tel" id="res_phone" placeholder="+91 12345 67890">
+                </div>
+                <div class="form-grid">
+                    <div>
+                        <label for="res_date">Date</label>
+                        <input type="date" id="res_date" required>
+                    </div>
+                    <div>
+                        <label for="res_time">Time</label>
+                        <input type="time" id="res_time" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="res_guests">Number of Guests</label>
+                    <input type="number" id="res_guests" min="1" max="10" value="2" required>
+                </div>
+                <div>
+                    <label for="res_message">Special Requests (Optional)</label>
+                    <textarea id="res_message" rows="3" placeholder="Any dietary restrictions or special occasion details?"></textarea>
+                </div>
+                <button type="submit" class="submit-button">
+                    Book Now
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <div class="container mx-auto text-center">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Visit Our Cafe</h3>
+                    <p><strong>Address:</strong> 123 Samosa Lane, Flavor Town, India</p>
+                    <p><strong>Phone:</strong> +91 98765 43210</p>
+                    <p><strong>Email:</strong> info@samosacafe.com</p>
+
+                    <h3>Opening Hours</h3>
+                    <ul class="opening-hours">
+                        <li>Monday - Friday: <span>10:00 AM - 9:00 PM</span></li>
+                        <li>Saturday - Sunday: <span>11:00 AM - 10:00 PM</span></li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form>
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                        <textarea placeholder="Your Message" rows="5"></textarea>
+                        <button type="submit" class="submit-button">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Samosa Cafe. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
